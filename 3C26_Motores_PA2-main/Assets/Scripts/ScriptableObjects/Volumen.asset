@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b1accf5c95f20b4f927f5729e96f5bd, type: 3}
   m_Name: Volumen
   m_EditorClassIdentifier: 
-  Master: 0
-  Musica: 0
-  SFX: 0
+  Master: 1
+  Musica: 0.37087467
+  SFX: 1

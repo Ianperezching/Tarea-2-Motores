@@ -7,11 +7,13 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode up;
     public KeyCode down;
     private Rigidbody2D myRB;
+    public AudioSource audioSource;
     [SerializeField]
     private float speed;
     private float limitSuperior;
     private float limitInferior;
     public int player_lives = 4;
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.tag == "Candy")
         {
+            audioSource.Play();
             CandyGenerator.instance.ManageCandy(other.gameObject.GetComponent<CandyController>(), this);
         }
     }
